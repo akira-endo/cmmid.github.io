@@ -57,6 +57,8 @@ Table 1. Credible intervals from a joint estimation
 | *R*0 | Normal(3,5)  | 1.4  | 11.6  |
 |  *k* | HalfNormal(10) for the reciprocal *k*<super>-1</super>  | 0.04  | 0.2  |
 
+---
+
 
 <table>
 <thead>
@@ -66,7 +68,11 @@ Table 1. Credible intervals from a joint estimation
 	<tr><th><span class="math display">\(R_0\)</span></th><td></td><td>1.4</td><td>11.6</td></tr>
 	<tr><th><span class="math display">\(k\)</span></th><td><span class="math display">\(\mathrm{HalfNormal}(10)\)</span> for the reciprocal <span class="math display">\(k^{-1}\)</span></td><td>0.04</td><td> 0.2</td></tr>
 </tbody>
+</table>
 
+---
+    
+---
 
 ## Limitations
 * We used the confirmed case counts reported to WHO and did not account for possible underreporting of cases.
