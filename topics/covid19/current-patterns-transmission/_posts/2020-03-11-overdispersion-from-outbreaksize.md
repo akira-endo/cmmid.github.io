@@ -106,7 +106,7 @@ Holding <span class="math display">\(R_0\)</span> constant, we estimated the ove
 </div>
 
 ### Proportion responsible for 80% of transmissions
-Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion <p><span class="math display">\(p_{80\%}\)</span></p> is given as
+Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion <div><span class="math display">\(p_{80\%}\)</span><\div> i.s given as
 <p><span class="math display">\[
 1-p_{80\%}=\int_0^{X}\mathrm{NB}\left(\lfloor x\rfloor;k,\frac{k}{R_0+k}\right)dx,
 \]</span></p>
