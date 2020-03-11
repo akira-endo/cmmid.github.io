@@ -61,6 +61,7 @@ Table 1. Credible intervals from a joint estimation
 
 
 <table>
+<caption>Table 1. Credible intervals from a joint estimation</caption>
 <thead>
 	<tr><th></th><th>Prior distribution</th><th>95% lower bound</th><th></th></tr>
 </thead>
