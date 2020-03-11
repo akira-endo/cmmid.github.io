@@ -53,11 +53,11 @@ The black lines show the median estimates given fixed *R*0 values and the grey s
 Table 1. Credible intervals from a joint estimation
 <table class="blueTable">
 <thead>
-	<tr><th></th><th>Prior distribution</th><th>95% lower bound</th><th>95% upper bound</th></tr>
+	<tr class="header"><th></th><th>Prior distribution</th><th>95% lower bound</th><th>95% upper bound</th></tr>
 </thead>
 <tbody>
-	<tr><th><span class="math display">\(R_0\)</span></th><td></td><td>1.4</td><td>11.6</td></tr>
-	<tr><th><span class="math display">\(k\)</span></th><td><span class="math display">\(\mathrm{HalfNormal}(10)\)</span> for the reciprocal <span class="math display">\(k^{-1}\)</span></td><td>0.04</td><td> 0.2</td></tr>
+	<tr class="odd"><th><span class="math display">\(R_0\)</span></th><td></td><td>1.4</td><td>11.6</td></tr>
+	<tr class="even"><th><span class="math display">\(k\)</span></th><td><span class="math display">\(\mathrm{HalfNormal}(10)\)</span> for the reciprocal <span class="math display">\(k^{-1}\)</span></td><td>0.04</td><td> 0.2</td></tr>
 </tbody>
 </table>
 
@@ -124,4 +124,3 @@ We computed *p*80% for each MCMC sample to yield median and 95% CrIs.
 
 ### Joint estimation of *R*0 and *k*
 <div>We performed a joint estimation of <span class="math display">\(R_0\)</span> and <span class="math display">\(k\)</span> by MCMC (with a weakly-informed normal prior <span class="math display">\(\mathcal N(\mu=3,\sigma=5)\)</span> for <span class="math display">\(R_0\)</span>; the prior for <span class="math display">\(k^{-1}\)</span> was the same as above). The posterior distribution indicated a lower bound of <span class="math display">\(R_0\)</span> of 1.4 and the upper bound of <span class="math display">\(k\)</span> of 0.2. The upper bound of <span class="math display">\(R_0\)</span> did not differ much from that of the prior, suggesting that our model and data did not provide useful evidence on the upper bound of <span class="math display">\(R_0\)</span>.</div>
-
