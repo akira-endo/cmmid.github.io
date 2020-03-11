@@ -92,16 +92,18 @@ c_\mathrm{o}(x;s)=P(X\geq x;s)=1-\sum_{m=0}^{x}c(m;s)+c(x;s)
 
 ### Defining countries with ongoing outbreak and total likelihood
 
-<p>We assumed that the growth of a cluster in a country had ceased if 7 days have passed since the latest reported cases (denoted by <span class="math display">\(A\)</span>). We applied the final size likelihood <span class="math display">\(c(x;s)\)</span> to those countries and <span class="math display">\(c_\mathrm{o}(x;s)\)</span> to the rest of the countries (countries with an ongoing outbreak: <span class="math display">\(B\)</span>).
-</p>
+<div>We assumed that the growth of a cluster in a country had ceased if 7 days have passed since the latest reported cases (denoted by <span class="math display">\(A\)</span>). We applied the final size likelihood <span class="math display">\(c(x;s)\)</span> to those countries and <span class="math display">\(c_\mathrm{o}(x;s)\)</span> to the rest of the countries (countries with an ongoing outbreak: <span class="math display">\(B\)</span>).
 
 The total likelihood is
 <p><span class="math display">\[
 L(R_0,k)=\prod_{i\in A}P(X=x_i;s_i)\prod_{i\in B}P(X\geq x_i;s_i)
 \]</span></p>
+<\div>
 
 ### Estimating overdispersion parameter
+<div>
 Holding <span class="math display">\(R_0\)</span> constant, we estimated the overdispersion parameter <span class="math display">\(k\)</span> using the likelihood given above. We used the Markov-chain Monte Carlo (MCMC) method to provide 95% credible intervals (CrIs). The reciprocal of <span class="math display">\(k\)</span> (concentration parameter) was sampled where the prior distribution for the reciprocal was weakly-informed half-normal (<span class="math display">\(\mathrm{HalfNormal}(\sigma=10)\)</span>). We employed the adaptive hit-and-run Metropolis algorithm and obtained 500 thinned samples from 10,000 MCMC steps (where the first half of the chain was discarded as burn-in).
+</div>
 
 ### Proportion responsible for 80% of transmissions
 Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion <span class="math display">\(p_{80\%}\)</span> is given as
