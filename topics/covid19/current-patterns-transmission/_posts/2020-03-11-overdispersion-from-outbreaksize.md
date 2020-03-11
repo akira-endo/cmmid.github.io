@@ -79,7 +79,7 @@ To distinguish between countries with and without an ongoing outbreak, we extrac
 
 
 ### Final outbreak size
-Assume that the offspring distribution for COVID-19 cases is an i.i.d. negative-binomial distribution. The probability mass function for the final cluster size resulting from <span class="math display">\(s\)</span> initial cases is, according to [Blumberg et al.](https://doi.org/10.1371/journal.ppat.1004452), given by
+Assume that the offspring distribution for COVID-19 cases is an i.i.d. negative-binomial distribution. The probability mass function for the final cluster size resulting from *s* initial cases is, according to [Blumberg et al.](https://doi.org/10.1371/journal.ppat.1004452), given by
 <p><span class="math display">\[
 c(x;s)=P(X=x;s)=\frac{ks}{kx+x-s}\binom{kx+x-s}{x-s}\frac{\left(\frac{R_0} k\right)^{x-s}}{\left(1+\frac{R_0} k\right)^{kx+x-s}}.
 \]</span></p>
@@ -106,7 +106,7 @@ Holding <span class="math display">\(R_0\)</span> constant, we estimated the ove
 </div>
 
 ### Proportion responsible for 80% of transmissions
-Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion <div><span class="math display">\(p_{80\%}\)</span><\div> i.s given as
+Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion <div><span class="math display">\(p_{80\%}\)</span><\div> is given as
 <p><span class="math display">\[
 1-p_{80\%}=\int_0^{X}\mathrm{NB}\left(\lfloor x\rfloor;k,\frac{k}{R_0+k}\right)dx,
 \]</span></p>
@@ -122,5 +122,5 @@ Note that
 
 We computed <span class="math display">\(p_{80\%}\)</span> for each MCMC sample to yield median and 95% CrIs.
 
-### Joint estimation of <span class="math display">$R_{0}$</span> and <span class="math display">\(k\)</span>
-We performed a joint estimation of <span class="math display">\(R_0\)</span> and <span class="math display">\(k\)</span> by MCMC (with a weakly-informed normal prior <span class="math display">\(\mathcal N(\mu=3,\sigma=5)\)</span> for <span class="math display">\(R_0\)</span>; the prior for <span class="math display">\(k^{-1}\)</span> was the same as above). The posterior distribution indicated a lower bound of <span class="math display">\(R_0\)</span> of 1.4 and the upper bound of <span class="math display">\(k\)</span> of 0.2. The upper bound of <span class="math display">\(R_0\)</span> did not differ much from that of the prior, suggesting that our model and data did not provide useful evidence on the upper bound of <span class="math display">\(R_0\)</span>.
+### Joint estimation of *R*0 and *k*
+<div>We performed a joint estimation of <span class="math display">\(R_0\)</span> and <span class="math display">\(k\)</span> by MCMC (with a weakly-informed normal prior <span class="math display">\(\mathcal N(\mu=3,\sigma=5)\)</span> for <span class="math display">\(R_0\)</span>; the prior for <span class="math display">\(k^{-1}\)</span> was the same as above). The posterior distribution indicated a lower bound of <span class="math display">\(R_0\)</span> of 1.4 and the upper bound of <span class="math display">\(k\)</span> of 0.2. The upper bound of <span class="math display">\(R_0\)</span> did not differ much from that of the prior, suggesting that our model and data did not provide useful evidence on the upper bound of <span class="math display">\(R_0\)</span>.</div>
