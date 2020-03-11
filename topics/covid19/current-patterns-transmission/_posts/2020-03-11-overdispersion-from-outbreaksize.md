@@ -35,20 +35,20 @@ To estimate the level of overdispersion in COVID-19 transmission from the worldw
 
 ## Methods summary
 * We extracted the number of imported/local cases in the affected countries from the [WHO situation report 38](https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200227-sitrep-38-covid-19.pdf) published on 27 February 2020.
-* Assuming that the offspring distribution (distribution of the number of secondary transmissions) for COVID-19 cases is an identically- and independently-distributed negative-binomial distribution, we estimated the parameters of the negative-binomial distribution (reproduction number <span class="math display">\(R_0\)</span> and overdispersion <span class="math display">\(k\)</span>) using the likelihood of observing the reported number of imported/local cases (outbreak size) of COVID-19 for each country.
+* Assuming that the offspring distribution (distribution of the number of secondary transmissions) for COVID-19 cases is an identically- and independently-distributed negative-binomial distribution, we estimated the parameters of the negative-binomial distribution (reproduction number *R*0 and overdispersion *k* using the likelihood of observing the reported number of imported/local cases (outbreak size) of COVID-19 for each country.
 * The outbreak size may grow in countries with an ongoing outbreak; using the current outbreak size as the final size for such countries may introduce bias. We assumed that the growth of a cluster in a country had not been ceased if the latest reported cases were within 7 days before 27 February 2020, and adjusted the likelihood for these countries by using the condition that the final cluster size has to be at least as large as the currently observed number of cases.
 
 ## Key findings
 * The offspring distribution of COVID-19 is highly overdispersed.
-* For the likely range of <span class="math display">\(R_0\)</span> of 2-3, the overdispersion parameter <span class="math display">\(k\)</span> was estimated to be around 0.1, suggesting that the majority of secondary transmission is caused by a very small fraction of individuals (80% of transmissions caused by ~10% of the total cases).
-* Joint estimation of <span class="math display">\(R_0\)</span> and <span class="math display">\(k\)</span> indicated it is likely that <span class="math display">\(R_0\geq 1.4\)</span> and <span class="math display">\(k\leq 0.2\)</span>. The current data and model did not provide evidence on the upper bound of <span class="math display">\[R_0\]</span>.
+* For the likely range of *R*0 of 2-3, the overdispersion parameter *k* was estimated to be around 0.1, suggesting that the majority of secondary transmission is caused by a very small fraction of individuals (80% of transmissions caused by ~10% of the total cases).
+* Joint estimation of *R*0 and *k* indicated it is likely that *R*0 > 1.4 and *k* < 0.2. The current data and model did not provide evidence on the upper bound of *R*0.
 
 
 ![Fig1A](figures/outbreaksize-fig1.png)
 
-Figure 1. MCMC estimates given assumed R0 values.
-(A) Estimated overestimation parameter for various basic reproduction number R0. (B) Proportion of infected individuals responsible for 80% of the total secondary transmissions (p80%).
-The black lines show the median estimates given fixed R0 values and the grey shaded areas indicate 95% CrIs. The regions corresponding to the likely range of R0 (2-3) are indicated by colour.
+Figure 1. MCMC estimates given assumed *R*0 values.
+(A) Estimated overestimation parameter for various basic reproduction number *R*0. (B) Proportion of infected individuals responsible for 80% of the total secondary transmissions (*p*80%).
+The black lines show the median estimates given fixed *R*0 values and the grey shaded areas indicate 95% CrIs. The regions corresponding to the likely range of *R*0 (2-3) are indicated by colour.
 
 Table 1. Credible intervals from a joint estimation
 <table class="blueTable">
@@ -106,7 +106,7 @@ Holding <span class="math display">\(R_0\)</span> constant, we estimated the ove
 </div>
 
 ### Proportion responsible for 80% of transmissions
-Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion <div><span class="math display">\(p_{80\%}\)</span><\div> is given as
+Following [Grantz et al.](https://hopkinsidd.github.io/nCoV-Sandbox/DispersionExploration.html), we calculated the estimated proportion of infected individuals responsible for 80% of secondary transmissions caused. Such proportion *p*80% is given as
 <p><span class="math display">\[
 1-p_{80\%}=\int_0^{X}\mathrm{NB}\left(\lfloor x\rfloor;k,\frac{k}{R_0+k}\right)dx,
 \]</span></p>
@@ -120,7 +120,7 @@ Note that
 \frac 1{R_0}\int_0^{X}\lfloor x\rfloor\mathrm{NB}\left(\lfloor x\rfloor;k,\frac{k}{R_0+k}\right)dx=\int_0^{X-1}\mathrm{NB}\left(\lfloor x\rfloor;k+1,\frac{k}{R_0+k}\right)dx.
 \]</span></p>
 
-We computed <span class="math display">\(p_{80\%}\)</span> for each MCMC sample to yield median and 95% CrIs.
+We computed *p*80% for each MCMC sample to yield median and 95% CrIs.
 
 ### Joint estimation of *R*0 and *k*
 <div>We performed a joint estimation of <span class="math display">\(R_0\)</span> and <span class="math display">\(k\)</span> by MCMC (with a weakly-informed normal prior <span class="math display">\(\mathcal N(\mu=3,\sigma=5)\)</span> for <span class="math display">\(R_0\)</span>; the prior for <span class="math display">\(k^{-1}\)</span> was the same as above). The posterior distribution indicated a lower bound of <span class="math display">\(R_0\)</span> of 1.4 and the upper bound of <span class="math display">\(k\)</span> of 0.2. The upper bound of <span class="math display">\(R_0\)</span> did not differ much from that of the prior, suggesting that our model and data did not provide useful evidence on the upper bound of <span class="math display">\(R_0\)</span>.</div>
