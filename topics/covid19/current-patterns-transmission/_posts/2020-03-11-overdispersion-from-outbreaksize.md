@@ -51,16 +51,7 @@ Figure 1. MCMC estimates given assumed R0 values.
 The black lines show the median estimates given fixed R0 values and the grey shaded areas indicate 95% CrIs. The regions corresponding to the likely range of R0 (2-3) are indicated by colour.
 
 
-<table>
-<caption>Table 1. Credible intervals from a joint estimation</caption>
-<thead>
-	<tr><th></th><th scope=col>Prior distribution</th><th scope=col>95% lower bound</th><th scope=col>95% upper bound</th></tr>
-</thead>
-<tbody>
-	<tr><th scope=row><span class="math display">\(R_0\)</span></th><td><span class="math display">\(\mathcal N(3,5)\)</span></td><td>1.4</td><td>11.6</td></tr>
-	<tr><th scope=row><span class="math display">\(k\)</span></th><td><span class="math display"><span class="math display">\(\mathrm{HalfNormal}(10)\)</span> for the reciprocal <span class="math display">\(k^{-1}\)</span></td><td>0.04</td><td> 0.2</td></tr>
-</tbody>
-</table>
+
 
 
 ## Limitations
