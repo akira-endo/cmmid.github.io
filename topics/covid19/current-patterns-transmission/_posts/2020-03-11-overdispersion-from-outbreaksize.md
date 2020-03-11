@@ -50,45 +50,14 @@ Figure 1. MCMC estimates given assumed R0 values.
 (A) Estimated overestimation parameter for various basic reproduction number R0. (B) Proportion of infected individuals responsible for 80% of the total secondary transmissions (p80%).
 The black lines show the median estimates given fixed R0 values and the grey shaded areas indicate 95% CrIs. The regions corresponding to the likely range of R0 (2-3) are indicated by colour.
 
-<table>
-<tr>
-  <th colspan=2>Filza File Manager</th>
-</tr>
-<tr>
-  <td><b>価格</b></td>
-  <td>$5.99(トライアルは無料)</td>
-</tr>
-<tr>
-  <td><b>開発者</b></td>
-  <td><a href=http://www.tigisoftware.com/default/>TIGI Software</a></td>
-</tr>
-<tr>
-  <td><b>リポジトリ</b></td>
-  <td><a href=https://cydia.saurik.com/api/share#?source=http://apt.thebigboss.org/repofiles/cydia/
-</a>BigBoss</td>
-</tr>
-</table>
-
-
 Table 1. Credible intervals from a joint estimation
 
 |   | Prior distribution |  95% lower bound | 95% upper bound |
-|---|---|---|---|
-| $R_0$ | $\mathcal N(3,5)$  | 1.4  | 11.6  |
-|  $k$ | $\mathrm{HalfNormal}(10)$ for the reciprocal $k^{-1}$  | 0.04  | 0.2  |
+|---------|-------------|--------------|---------------|
+| *R*0 | Normal(3,5)  | 1.4  | 11.6  |
+|  *k* | HalfNormal(10) for the reciprocal *k*<super>-1</super>  | 0.04  | 0.2  |
 
 
-
-<table>
-<caption>Table 1. Credible intervals from a joint estimation</caption>
-<thead>
-	<tr><th></th><th scope=col>Prior distribution</th><th scope=col>95% lower bound</th><th scope=col></th></tr>
-</thead>
-<tbody>
-	<tr><th scope=row><span class="math display">\(R_0\)</span></th><td></td><td>1.4</td><td>11.6</td></tr>
-	<tr><th scope=row><span class="math display">\(k\)</span></th><td><span class="math display">\(\mathrm{HalfNormal}(10)\)</span> for the reciprocal <span class="math display">\(k^{-1}\)</span></td><td>0.04</td><td> 0.2</td></tr>
-</tbody>
-</table>
 
 
 ## Limitations
