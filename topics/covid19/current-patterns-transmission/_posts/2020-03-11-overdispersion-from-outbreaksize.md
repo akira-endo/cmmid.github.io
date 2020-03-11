@@ -50,12 +50,15 @@ Figure 1. MCMC estimates given assumed R0 values.
 (A) Estimated overestimation parameter for various basic reproduction number R0. (B) Proportion of infected individuals responsible for 80% of the total secondary transmissions (p80%).
 The black lines show the median estimates given fixed R0 values and the grey shaded areas indicate 95% CrIs. The regions corresponding to the likely range of R0 (2-3) are indicated by colour.
 
+
 Table 1. Credible intervals from a joint estimation
 
 |   | Prior distribution |  95% lower bound | 95% upper bound |
 |---|---|---|---|
-|  <span class="math display">\(R_0\)</span> | <span class="math display">\(\mathcal N(3,5)\)</span>  | 1.4  | 11.6  |
-|  <span class="math display">\(k\)</span> | <span class="math display">\(\mathrm{HalfNormal}(10)\)</span> for the reciprocal <span class="math display">\(k^{-1}\)</span>  | 0.04  | 0.2  |
+| $R_0$ | $\mathcal N(3,5)$  | 1.4  | 11.6  |
+|  $k$ | $\mathrm{HalfNormal}(10)$ for the reciprocal $k^{-1}$  | 0.04  | 0.2  |
+
+
 
 <table>
 <caption>Table 1. Credible intervals from a joint estimation</caption>
