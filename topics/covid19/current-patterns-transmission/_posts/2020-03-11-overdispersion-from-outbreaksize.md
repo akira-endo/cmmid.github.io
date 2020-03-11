@@ -98,7 +98,7 @@ The total likelihood is
 <p><span class="math display">\[
 L(R_0,k)=\prod_{i\in A}P(X=x_i;s_i)\prod_{i\in B}P(X\geq x_i;s_i)
 \]</span></p>
-<\div>
+</div>
 
 ### Estimating overdispersion parameter
 <div>
